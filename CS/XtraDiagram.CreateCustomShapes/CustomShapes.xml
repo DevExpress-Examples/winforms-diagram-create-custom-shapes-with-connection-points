@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Shapes xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ShapeTemplate Id="Shape1" DefaultSize="50,100" Rows="*" Columns="*">
+    <Start X="0" Y="0" />
+    <Line X="1" Y="0" />
+    <Line X="0.8" Y="0.8" />
+    <Line X="0" Y="1" />
+    <ConnectionPoints>
+      <ShapePoint X="0" Y="0" />
+      <ShapePoint X="0.5" Y="0" />
+      <ShapePoint X="1" Y="0" />
+      <ShapePoint X="0.8" Y="0.8" />
+      <ShapePoint X="0" Y="1" />
+      <ShapePoint X="0" Y="0.5" />
+    </ConnectionPoints>
+    <Parameters />
+  </ShapeTemplate>
+  <ShapeTemplate Id="Shape2" DefaultSize="60,120" Rows="*" Columns="*">
+    <Start X="0" Y="0" FillColor="Brown" />
+    <Arc X="1" Y="0" Size="CreateSize([W] / 2, [H] / 10)" />
+    <Arc X="1" Y="1" Size="CreateSize([W] / 10, [H] / 2)" />
+    <Arc X="0" Y="1" Size="CreateSize([W] / 2, [H] / 10)" />
+    <Arc X="0" Y="0" Size="CreateSize([W] / 10, [H] / 2)" />
+    <ConnectionPoints>
+      <ShapePoint X="0" Y="0" />
+      <ShapePoint X="1" Y="0" />
+      <ShapePoint X="0" Y="1" />
+    </ConnectionPoints>
+    <Parameters />
+  </ShapeTemplate>
+  <ShapeTemplate Id="Shape3" DefaultSize="60,120" Rows="*" Columns="*">
+    <Start X="0" Y="0" FillColor="Brown" />
+    <Arc X="1" Y="0" Size="CreateSize([W] / 2, [P0] * [H])" />
+    <Line X="1" Y="1" />
+    <Line X="0" Y="1" />
+    <Line X="0" Y="0" />
+    <ConnectionPoints>
+      <ShapePoint X="0" Y="0" />
+      <ShapePoint X="1" Y="0" />
+      <ShapePoint X="0" Y="1" />
+    </ConnectionPoints>
+    <Parameters>
+      <Parameter DefaultValue="0.1" Value="[P.Y] / [H]" Point="CreatePoint([W] / 2, [P] * [H])" Min="0" Max="1" />
+    </Parameters>
+  </ShapeTemplate>
+  <ShapeTemplate Id="Shape4" DefaultSize="60,120" IsQuick="true" Rows="[H] * [P0];[H] * (1 - [P0])" Columns="*">
+    <Start X="0" Y="0" FillColor="Green" />
+    <Line X="1" Y="0" />
+    <Line X="1" Y="1" />
+    <Line X="0" Y="1" />
+    <Start X="0" Y="1" FillColor="Red" />
+    <Line X="1" Y="1" />
+    <Line X="1" Y="2" />
+    <Line X="0" Y="2" />
+    <ConnectionPoints>
+      <ShapePoint X="0.5" Y="0" />
+      <ShapePoint X="1" Y="1" />
+      <ShapePoint X="0.5" Y="2" />
+      <ShapePoint X="0" Y="1" />
+    </ConnectionPoints>
+    <Parameters>
+      <Parameter DefaultValue="0.5" Value="[P.Y] / [H]" Point="CreatePoint([W], [P] * [H])" Min="0" Max="1" />
+    </Parameters>
+  </ShapeTemplate>
+</Shapes>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>DiagramControl - How to create custom shapes with connection points - Developer Express Example</title>
+<style>
+html, body, form
+{
+	font-family: Tahoma, Arial, Verdana;
+    font-size: small;
+    color: #303440;
+}
+h1 {
+	font-size: 125%;
+	font-weight: normal;
+	color: Black;
+	letter-spacing: 101%;
+}
+</style>
+</head>
+<body>
+<h1>Developer Express Example<br />DiagramControl - How to create custom shapes with connection points</h1>
+<p>The Diagram control supports a special language for defining shapes. The main element that contains shape description is ShapeTemplate. This element describes a shape contour and may contain several segments:
+- Start. Specifies the start point
+- Line. Defines a line with start and end points
+- Arc. Defines an arc with start and end points
+
+To specify connection points, use the ShapeTemplate.ConnectionPoints property.
+Shapes may contain parameters. Parameters may be used to dynamically calculate an end point, row height, and other properties. To specify parameters, use the ShapeTemplate.Parameters property.
+To register custom shapes, create a stencil with the DiagramStencil.Create method and pass it to the DiagramToolboxRegistrator.RegisterStencil method.
+
+
+Note: Starting with version 16.1, it is recommended to use XML to describe custom shapes. If you prefer to use XAML instead, take a look at the following example: http://www.devexpress.com/scid=T381372.</p>
+<p>You can find sample updates and versions for different programming languages here:<br /><a href="http://www.devexpress.com/example=T324404">http://www.devexpress.com/example=T324404</a>.</p>
+</body>
+</html>
