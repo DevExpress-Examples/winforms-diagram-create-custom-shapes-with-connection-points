@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DiagramResources.xaml](./CS/DxSample/DiagramResources.xaml) (VB: [DiagramResources.xaml](./VB/DxSample/DiagramResources.xaml))
+* [Form1.cs](./CS/DxSample/Form1.cs) (VB: [Form1.vb](./VB/DxSample/Form1.vb))
+<!-- default file list end -->
 # DiagramControl - How to create custom shapes with connection points
 
 
