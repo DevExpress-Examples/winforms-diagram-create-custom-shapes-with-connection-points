@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomShapes.xml](./CS/XtraDiagram.CreateCustomShapes/CustomShapes.xml)
+* [Form1.cs](./CS/XtraDiagram.CreateCustomShapes/Form1.cs) (VB: [Form1.vb](./VB/XtraDiagram.CreateCustomShapes/Form1.vb))
+<!-- default file list end -->
 # DiagramControl - How to create custom shapes with connection points
 
 
