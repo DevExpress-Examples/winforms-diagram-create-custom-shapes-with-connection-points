@@ -6,7 +6,7 @@
 
 # Diagram Control for WinForms - Create Custom Shapes with Connection Points
 
-This example demonstraes how to define custom shapes for the [DiagramControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramControl) in XML.
+This example demonstrates how to define custom shapes for the [DiagramControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramControl) in XML.
 
 ![image](https://user-images.githubusercontent.com/65009440/187895616-f50a9c14-832a-4420-9b13-961c8b3df3fa.png)
 
@@ -14,7 +14,7 @@ The **ShapeTemplate** class describes a [diagram shape](https://docs.devexpress.
 
 * [Start](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Start) - Specifies the start point of the geometry and includes customization properties. A shape can consist of multiple geometries.
 * [Line](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Line) - Defines a line with start and end points.
-* [Arc](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Arc) - Defines an arc with the size and the direction.
+* [Arc](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Arc) - Defines an arc with the size and direction.
 * **ShapePoint** - Defines a [connection point](https://docs.devexpress.com/WindowsForms/116884/controls-and-libraries/diagrams/diagram-items/connectors). To specify connection points, use the **ShapeTemplate.ConnectionPoints** property.
 * [Parameter](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Parameter) - Defines a parameter that allows users to transform the shape. To specify parameters, use the **ShapeTemplate.Parameters** property.
 
