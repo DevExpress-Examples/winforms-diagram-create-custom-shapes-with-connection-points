@@ -22,13 +22,11 @@ Refer to the following help topic for more information about supported segments:
 
 To register custom shapes, create a stencil with the [DiagramStencil.Create](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.DiagramStencil.Create.overloads) method and pass it to the [DiagramToolboxRegistrator.RegisterStencil](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.DiagramToolboxRegistrator.RegisterStencil(DevExpress.Diagram.Core.DiagramStencil)) method.
 
-To create a shape programmatically, get an instance of your custom stencil, call the [DiagramStencil.GetShape](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.DiagramStencil.GetShape(System.String)) method to access the [ShapeDescription](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.ShapeDescription) object, and assign it to the [DiagramShape.Shape](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramShape.Shape) property:
+To create a shape in code, get an instance of your custom stencil, call the [DiagramStencil.GetShape](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.DiagramStencil.GetShape(System.String)) method to access the [ShapeDescription](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.ShapeDescription) object, and assign it to the [DiagramShape.Shape](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramShape.Shape) property:
 
 ```cs
 new DiagramShape() { Shape = customStencil.GetShape("Shape1")}
 ```
-
-Starting with **v16.1**, we recommend to use XML to describe custom shapes. If you prefer to use XAML instead, take a look at the following example: [Diagram Control for WinForms - Create Custom Shapes with Connection Points in XAML](https://github.com/DevExpress-Examples/diagramcontrol-how-to-create-custom-shapes-with-connection-points-using-xaml-markup-t381372).
 
 ## Files to Look At
 
