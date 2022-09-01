@@ -1,5 +1,7 @@
-﻿Namespace DxSample
-    Partial Public Class Form1
+Namespace DxSample
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -27,9 +29,9 @@
             Me.ribbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
             Me.splitContainerControl1 = New DevExpress.XtraEditors.SplitContainerControl()
             Me.toolboxControl1 = New DevExpress.XtraToolbox.ToolboxControl()
-            DirectCast(Me.diagramControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.splitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.diagramControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.splitContainerControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.splitContainerControl1.SuspendLayout()
             Me.SuspendLayout()
             ' 
@@ -48,7 +50,7 @@
             ' ribbonControl1
             ' 
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.ribbonControl1.ExpandCollapseItem})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
             Me.ribbonControl1.MaxItemId = 1
             Me.ribbonControl1.Name = "ribbonControl1"
@@ -87,21 +89,21 @@
             Me.Name = "Form1"
             Me.Ribbon = Me.ribbonControl1
             Me.Text = "Form1"
-            DirectCast(Me.diagramControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.splitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.diagramControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.splitContainerControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.splitContainerControl1.ResumeLayout(False)
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private ribbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+
         Private splitContainerControl1 As DevExpress.XtraEditors.SplitContainerControl
+
         Private diagramControl1 As DevExpress.XtraDiagram.DiagramControl
+
         Private toolboxControl1 As DevExpress.XtraToolbox.ToolboxControl
     End Class
 End Namespace
-
