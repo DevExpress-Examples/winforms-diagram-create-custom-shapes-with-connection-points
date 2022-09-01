@@ -14,7 +14,7 @@ The **ShapeTemplate** class describes a [diagram shape](https://docs.devexpress.
 
 * [Start](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Start) - Specifies the start point of the geometry and includes customization properties. A shape can consist of multiple geometries.
 * [Line](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Line) - Defines a line with start and end points.
-* [Arc](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Arc) - Defines an arc with the size and direction.
+* [Arc](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Arc) - Defines an arc with size and direction.
 * **ShapePoint** - Defines a [connection point](https://docs.devexpress.com/WindowsForms/116884/controls-and-libraries/diagrams/diagram-items/connectors). To specify connection points, use the **ShapeTemplate.ConnectionPoints** property.
 * [Parameter](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Parameter) - Defines a parameter that allows users to transform the shape. To specify parameters, use the **ShapeTemplate.Parameters** property.
 
