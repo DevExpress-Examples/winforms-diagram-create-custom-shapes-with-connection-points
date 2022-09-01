@@ -3,32 +3,46 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T324404)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [CustomShapes.xml](./CS/XtraDiagram.CreateCustomShapes/CustomShapes.xml)
-* [Form1.cs](./CS/XtraDiagram.CreateCustomShapes/Form1.cs) (VB: [Form1.vb](./VB/XtraDiagram.CreateCustomShapes/Form1.vb))
-<!-- default file list end -->
-# DiagramControl - How to create custom shapes with connection points
+# Diagram Control for WinForms - Create Custom Shapes with Connection Points
 
+This example demonstraes how to define custom shapes for the [DiagramControl](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramControl) in XML.
 
-The Diagram control supports a special language for defining shapes. The main element that contains shape description is <em>ShapeTemplate</em>. This element describes a shape contour and may contain several segments
+![image](https://user-images.githubusercontent.com/65009440/187895616-f50a9c14-832a-4420-9b13-961c8b3df3fa.png)
 
-* <em>Start</em>. Specifies the start point
-* <em>Line</em>. Defines a line with start and end points
-* <em>Arc</em>. Defines an arc with start and end points<br><br>
-To learn more about supported segnemtns, please refer to [Creating Shapes and Containers Using Shape Templates](https://documentation.devexpress.com/WindowsForms/17764/Controls-and-Libraries/Diagrams/Diagram-Items/Creating-Shapes-and-Containers-Using-Shape-Templates).
+The **ShapeTemplate** class describes a [diagram shape](https://docs.devexpress.com/WindowsForms/116882/controls-and-libraries/diagrams/diagram-items/shapes) and contains the following segments:
 
-<br>To specify connection points, use the <em>ShapeTemplate.ConnectionPoints</em> property.<br>Shapes may contain parameters. Parameters may be used to dynamically calculate an end point, row height, and other properties. To specify parameters, use the <em>ShapeTemplate.Parameters</em> property.<br>To register custom shapes, create a stencil with the <em>DiagramStencil.Create</em> method and pass it to the <em>DiagramToolboxRegistrator.RegisterStencil</em> method.
+* [Start](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Start) - Specifies the start point of the geometry and includes customization properties. A shape can consist of multiple geometries.
+* [Line](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Line) - Defines a line with start and end points.
+* [Arc](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Arc) - Defines an arc with the size and the direction.
+* **ShapePoint** - Defines a [connection point](https://docs.devexpress.com/WindowsForms/116884/controls-and-libraries/diagrams/diagram-items/connectors). To specify connection points, use the **ShapeTemplate.ConnectionPoints** property.
+* [Parameter](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.Shapes.Parameter) - Defines a parameter that allows users to transform the shape. To specify parameters, use the **ShapeTemplate.Parameters** property.
 
-To create a shape programmatically, get an instance of your custom stencil, call the DiagramStencil.GetShape method to access the ShapeDescription object, and assign it to the DiagramShape.Shape property:
+Refer to the following help topic for more information about supported segments: [Creating Shapes and Containers Using Shape Templates](https://docs.devexpress.com/WindowsForms/17764/controls-and-libraries/diagrams/diagram-items/creating-shapes-and-containers-using-shape-templates).
+
+To register custom shapes, create a stencil with the [DiagramStencil.Create](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.DiagramStencil.Create.overloads) method and pass it to the [DiagramToolboxRegistrator.RegisterStencil](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.DiagramToolboxRegistrator.RegisterStencil(DevExpress.Diagram.Core.DiagramStencil)) method.
+
+To create a shape programmatically, get an instance of your custom stencil, call the [DiagramStencil.GetShape](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.DiagramStencil.GetShape(System.String)) method to access the [ShapeDescription](https://docs.devexpress.com/CoreLibraries/DevExpress.Diagram.Core.ShapeDescription) object, and assign it to the [DiagramShape.Shape](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramShape.Shape) property:
 
 ```cs
 new DiagramShape() { Shape = customStencil.GetShape("Shape1")}
 ```
 
-<br><br><br><strong>Note:</strong> <em>Starting with version 16.1, it is recommended to use XML to describe custom shapes. If you prefer to use XAML instead, take a look at the following example: <a href="https://www.devexpress.com/Support/Center/p/T381372">T381372 - DiagramControl - How to create custom shapes with connection points using XAML markup</a>.</em>
+Starting with **v16.1**, we recommend to use XML to describe custom shapes. If you prefer to use XAML instead, take a look at the following example: [Diagram Control for WinForms - Create Custom Shapes with Connection Points in XAML](https://github.com/DevExpress-Examples/diagramcontrol-how-to-create-custom-shapes-with-connection-points-using-xaml-markup-t381372).
 
-<br/>
+## Files to Look At
 
+* [CustomShapes.xml](./CS/XtraDiagram.CreateCustomShapes/CustomShapes.xml)
+* [Form1.cs](./CS/XtraDiagram.CreateCustomShapes/Form1.cs) (VB: [Form1.vb](./VB/XtraDiagram.CreateCustomShapes/Form1.vb))
 
+## Documentation
+
+* [Creating Shapes and Containers Using Shape Templates](https://docs.devexpress.com/WindowsForms/17764/controls-and-libraries/diagrams/diagram-items/creating-shapes-and-containers-using-shape-templates)
+* [Diagrams](https://docs.devexpress.com/WindowsForms/114833/controls-and-libraries/diagrams)
+* [Shapes](https://docs.devexpress.com/WindowsForms/116882/controls-and-libraries/diagrams/diagram-items/shapes)
+
+## More Examples
+
+* [Diagram Control for WinForms - Create Custom Shapes with Connection Points in XAML](https://github.com/DevExpress-Examples/diagramcontrol-how-to-create-custom-shapes-with-connection-points-using-xaml-markup-t381372)
+* [How to create a DiagramShape descendant and serialize its properties](https://github.com/DevExpress-Examples/how-to-create-a-diagramshape-descendant-and-serialize-its-properties-t361265)
+* [How to create custom diagram containers and register them in the toolbox and ribbon gallery](https://github.com/DevExpress-Examples/how-to-create-custom-diagram-containers-and-register-them-in-the-toolbox-and-ribbon-gallery-t466447)
