@@ -46,7 +46,7 @@ new DiagramShape() { Shape = customStencil.GetShape("Shape1")}
 * [How to create a DiagramShape descendant and serialize its properties](https://github.com/DevExpress-Examples/how-to-create-a-diagramshape-descendant-and-serialize-its-properties-t361265)
 * [How to create custom diagram containers and register them in the toolbox and ribbon gallery](https://github.com/DevExpress-Examples/how-to-create-custom-diagram-containers-and-register-them-in-the-toolbox-and-ribbon-gallery-t466447)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-diagram-create-custom-shapes-with-connection-points&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-diagram-create-custom-shapes-with-connection-points&~~~was_helpful=no)
 
